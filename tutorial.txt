@@ -16,3 +16,6 @@ init
 
 check what is not commited
 > git status
+
+skip stageing area which is init section above
+> git commit -am "fixed xyz"
