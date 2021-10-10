@@ -1,0 +1,10 @@
+> git --version
+> git config --global user.email mdrehan4all@gmail.com
+> git config --global user.name "Md Rehan"
+> git config --global core.editor "code --wait"
+> git config --global -e
+
+if you are on windows
+> git config --global core.autocrlf true
+if you are on linux
+> git config --global core.autocrlf input
