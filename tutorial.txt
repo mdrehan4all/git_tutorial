@@ -4,18 +4,32 @@
 > git config --global core.editor "code --wait"
 > git config --global -e
 
-if you are on windows
+# if you are on windows
 > git config --global core.autocrlf true
-if you are on linux
+
+# if you are on linux
 > git config --global core.autocrlf input
 
-init
+# init
 > git init
 > git add .
 > git commit -m "first commit"
 
-check what is not commited
+# check what is not commited
 > git status
 
-skip stageing area which is init section above
+# skip stageing area which is init section above
 > git commit -am "fixed xyz"
+
+# check file in staging area
+> git ls-files
+
+# Ignore files to add into git create a file ".gitignore" and add file/folder names in it
+logs/
+main.log
+*.log
+
+# Diff Tool
+> git config --global diff.tool vscode
+> git config --global difftool.vscode.cmd "code --wait --diff #LOCAL $REMOTE"
+
